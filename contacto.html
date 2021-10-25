@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="image/isograf.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Amiri:wght@400;700&family=Roboto:wght@300;400;700&family=Zen+Maru+Gothic:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/isograf.ico">
+    <title>GRAFEMIA</title>
+</head>
+<body>
+
+    <!--MENU NAV-->
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="container-nav">
+        <nav class="nav-main">
+            <div>
+                <ul class="nav-menu">
+                    <li>
+                        <a  href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a  href="nosotros.html">NOSOTROS</a>
+                    </li>
+                        <li><div><a  href="index.html"><img src="img/isografemia.png" class="nav-brand"></a></div></li>
+                    <li>
+                        <a  href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li>
+                        <a  href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--CONTACTO-->
+
+    <main class="contenedor-contacto">
+        <div class="titulo-contacto">
+            <p>Envíanos tus datos y nos contactaremos</p>
+        </div>
+        <form action="" class="formulario" id="formulario" >
+            <!--Grupo: Usuario-->
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="jhon123">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
+            </div>
+
+             <!--Grupo: Nombre-->
+             <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Jhon Doe">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
+            </div>
+
+            <!--Grupo: Contraseña-->
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña debe ser de 4 a 12 dígitos.</p>
+            </div>
+
+            <!--Grupo: Contraseña 2-->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Repetir contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+            <!--Grupo: Correo Electronico-->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+                    <i class="formulario__validacion-estado fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números, letras y guión bajo.</p>
+            </div>
+
+            <!--Grupo: Teléfono-->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="2604448913">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
+            </div>
+            <!--Grupo: Términos y condiciones-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos"  id="terminos">
+                    Acepto los términos y condiciones
+                </label>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"> </i> <b>Error:</b> Por favor rellenar el formulario correctamente.</p>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+       <aside class="aside-contacto">
+            <div>
+                <h2>Número Celular:</h2>
+                <i class="fab fa-whatsapp"> +54 9 260 4417168</i>
+            </div>
+            <div>
+                <h2>E-mails:</h2>
+                <i class="far fa-envelope"> grafemiaproducciones@gmail.com</i>
+            </div>
+            <div>
+                <h2>Dirección:</h2>
+                <i class="fas fa-map-marker icon-contacto"> Raúl Matera 1327, Barrio Americasa, San Rafael,Mza.</i>
+            </div>
+        </aside>
+
+        <div class="mapa-contacto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.8839849432173!2d-68.28507957074022!3d-34.61589439507771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a9a875216637%3A0x618709422ee0350!2sGRAFEMIA!5e0!3m2!1ses!2sar!4v1635026144915!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+
+    <!--FOOTER SOCIAL-->
+
+    <footer>
+        <div class="footer-items">
+            <p>GRAFEMIA © Copyright</p>
+            <img src="img/graflogo.png">
+            <div class="contenedor">
+                <div class="contenedor-icono">
+                    <a class="social" href="https://www.facebook.com/Grafemia/about/?ref=page_internal" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a class="social" href="https://www.instagram.com/grafemia" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a class="social" href="https://www.youtube.com/channel/UCBiVoCSCkznk6fdgKpB_82w" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/f58dfb0bf6.js" crossorigin="anonymous"></script>    
+</body>
+</html>
